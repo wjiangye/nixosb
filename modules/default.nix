@@ -1,0 +1,10 @@
+{ ... }:
+
+{
+  imports = [
+    ./core
+    ./pkgs
+    ./wayland
+  ];
+
+}
