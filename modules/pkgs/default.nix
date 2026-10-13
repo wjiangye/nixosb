@@ -32,6 +32,7 @@
     cliphist
     grim
     slurp
+    gocryptfs
 
     librewolf
     pkgs-stable.libreoffice
@@ -40,6 +41,7 @@
 
     llama-cpp-vulkan
     ffmpeg
+    whisper-cpp-vulkan
 
   ];
 

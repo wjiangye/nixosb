@@ -7,7 +7,8 @@
 
 {
   imports = [
-    ./editor/hx
+    ./editor/hx.nix
+    ./terminal/foot.nix
 
   ];
 
@@ -15,7 +16,6 @@
   home.homeDirectory = "/home/s4yok";
 
   home.packages = with pkgs; [
-    foot
     cmatrix
     quickshell
     siyuan
@@ -26,7 +26,7 @@
   programs.helix = {
     enable = true;
   };
-  
+
   programs.git = {
     enable = true;
     settings = {
@@ -46,10 +46,10 @@
       nix-grb = "sudo nix-collect-garbage -d";
       llm-serv = "llama serve -hf";
       llm-cli = "llama-cli -hf";
-      
+
     };
-      
+
   };
-  
+
   home.stateVersion = "26.05";
 }
